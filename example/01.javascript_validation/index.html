@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jaehyun</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/common-ui.js" defer></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard.css"
+      integrity="sha512-NzqTHTrO48HsIamogmIaVhTXoSgRF24Cn+ynrNYrFuKrY0AdDbmcNieiOHsQARS/r0Gax9VwV3/rVMHs3ipUlg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header">
+        <div class="container">
+          <nav class="header_nav">
+            <h1>
+              <a href="/"><img src="./img/logo-white.png" alt="logo" /></a>
+            </h1>
+
+            <ul>
+              <li>
+                <a href="javascript:void(0);" data-link="Intro">Intro</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" data-link="Site">Site</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" data-link="Contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="main_visual">
+          <video
+            autoplay="autoplay"
+            loop="loop"
+            muted="muted"
+            playsinline="playsinline"
+          >
+            <source src="./img/main_movie.mp4" type="video/mp4" />
+          </video>
+          <p class="inner_txt">완전히 차원이 다른<br />우리의 새로운 얼굴</p>
+        </section>
+
+        <section class="main_intro" id="Intro">
+          <div class="container" data-aos="fade-up">
+            <div class="inner_title">
+              <h2 class="h1_type">Intro</h2>
+              <p class="sub-title">
+                accessible via CSS variables and utility clas
+              </p>
+            </div>
+
+            <div class="inner_wrap">
+              <div class="i_img">
+                <img src="./img/web-development.png" alt="" />
+              </div>
+              <div class="i_txt">
+                These new colors are accessible via CSS variables and utility
+                classes—like --bs-primary-bg-subtle and
+                .bg-primary-subtle—allowing you to compose your own CSS rules
+                with the variables, or to quickly apply styles via classes. The
+                utilities are built with the color’s associated CSS variables,
+                and since we customize those CSS variables for dark mode, they
+                are also adaptive to color mode by default.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="main_site" id="Site">
+          <div class="container" data-aos="fade-up">
+            <div class="inner_title">
+              <h2 class="h1_type">Site</h2>
+              <p class="sub-title">
+                A modern, fully static, fast, secure fully proxied
+              </p>
+            </div>
+
+            <div class="inner_wrap">
+              <div class="site_wrap">
+                <ul>
+                  <li>
+                    <a href="javascript:void(0);" class="site_img">
+                      <img src="./img/site_img01.png" alt="" />
+                    </a>
+                    <p class="site_tit">AI 반응형 홈페이지</p>
+                    <p class="site_desc">Web | 퍼블리싱</p>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);" class="site_img">
+                      <img src="./img/site_img02.jpg" alt="" />
+                    </a>
+                    <p class="site_tit">닷컴 반응형 홈페이지</p>
+                    <p class="site_desc">Web | 퍼블리싱</p>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);" class="site_img">
+                      <img src="./img/site_img02.jpg" alt="" />
+                    </a>
+                    <p class="site_tit">AI 반응형 홈페이지</p>
+                    <p class="site_desc">Web | 퍼블리싱</p>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);" class="site_img">
+                      <img src="./img/site_img01.png" alt="" />
+                    </a>
+                    <p class="site_tit">아카데미 반응형홈페이지</p>
+                    <p class="site_desc">Web | 퍼블리싱</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="main_contact" id="Contact">
+          <div class="container" data-aos="fade-up">
+            <div class="inner_title">
+              <h2 class="h1_type">Contact</h2>
+              <p class="sub-title">communication with someone</p>
+            </div>
+
+            <div class="inner_wrap">
+              <div class="main_form">
+                <form>
+                  <div>
+                    <dl>
+                      <dt>유형</dt>
+                      <dd>
+                        <select class="sel" name="f_type" id="f_type">
+                          <option value="" selected>선택</option>
+                          <option value="type01">유형 1</option>
+                          <option value="type02">유형 2</option>
+                        </select>
+                        <div class="error_text hide" id="typeMsg">
+                          유형을 선택하세요.
+                        </div>
+                      </dd>
+                      <dt>성명</dt>
+                      <dd>
+                        <input
+                          type="text"
+                          id="f_name"
+                          name="f_name"
+                          value=""
+                          placeholder="성명"
+                          autocomplete="off"
+                        />
+                        <div class="error_text hide" id="nameMsg">
+                          성명은 2~10자 이어야 합니다.
+                        </div>
+                      </dd>
+                      <dt>이메일</dt>
+                      <dd>
+                        <input
+                          type="text"
+                          id="f_email"
+                          name="f_email"
+                          value=""
+                          placeholder="이메일"
+                          autocomplete="off"
+                        />
+                        <div class="error_text hide" id="emailMsg">
+                          이메일 주소가 정확한지 확인해 주세요.
+                        </div>
+                      </dd>
+                      <dt>비밀번호</dt>
+                      <dd>
+                        <input
+                          type="password"
+                          id="f_password"
+                          name="f_password"
+                          value=""
+                          placeholder="비밀번호"
+                          autocomplete="false"
+                        />
+                        <div class="error_text hide" id="passwordMsg">
+                          8~16자의 영문 대/소문자, 숫자, 특수문자를 사용해
+                          주세요.
+                        </div>
+                      </dd>
+                      <dt>비밀번호 확인</dt>
+                      <dd>
+                        <input
+                          type="password"
+                          id="f_password_chk"
+                          name="f_password_chk"
+                          value=""
+                          placeholder="비밀번호 확인"
+                          autocomplete="new-password"
+                        />
+                        <div class="error_text hide" id="passwordChkMsg">
+                          22 8~16자의 영문 대/소문자, 숫자, 특수문자를 사용해
+                          주세요.
+                        </div>
+                      </dd>
+                    </dl>
+                    <button type="button" class="btn_basic1 big">보내기</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <address>
+            <strong>(주)퍼블아카데미</strong>
+            <p>
+              Jaehyun WEB | contact@gmail.com | TEL.000-000-0000 | 등록번호
+              263-16-01300
+            </p>
+            <p>All rights reserved</p>
+          </address>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
