@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/* reset */
+body {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: none; /* 크롬, 사파리, 오페라 신버전 */
+  -ms-text-size-adjust: none; /* IE */
+  -moz-text-size-adjust: none; /* 파이어폭스 */
+  -o-text-size-adjust: none; /* 오페라 구버전 */
+  font-family: 'pretendard', sans-serif;
+}
+ul,
+li,
+dl,
+dt,
+dd {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: inherit;
+}
+table th {
+  font-weight: normal;
+}
+caption {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -99999em;
+}
+u {
+  font-style: oblique;
+  text-decoration: none;
+}
+html body * {
+  box-sizing: border-box;
+}
+
+@media (max-width: 992px) {
+}

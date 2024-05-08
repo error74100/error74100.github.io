@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+@import url(./common.css);
+
+/* link */
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-main);
+}
+
+/* align */
+.t_center {
+  text-align: center;
+}
+.t_left {
+  text-align: left;
+}
+.t_right {
+  text-align: right;
+}
+
+/* layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* main */
+.gapBox {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+  overflow: hidden;
+}
+
+.cont01 .title {
+  font-size: 8vw;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.cont01 span {
+  display: block;
+  color: transparent;
+  -webkit-text-stroke: 2px #b1dd40;
+}
+
+.cont02 {
+  background: #fff;
+}
+
+.cont02 .cardWrap {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.cont02 .cardWrap li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22%;
+  height: 18.75rem;
+  color: #222;
+  border-radius: 1.25rem;
+  background-color: #fed700;
+  font-weight: 600;
+  transform: translate(0px, 200px);
+}
+
+.cont03 {
+  position: relative;
+}
+
+.cont03 .title {
+  display: block;
+  font-size: 7vw;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 2px #b1dd40;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.cont03 .item {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15.625rem;
+  height: 21.875rem;
+  color: #222;
+  border-radius: 1.25rem;
+  background-color: #fed700;
+  font-weight: 600;
+  transform: translate(-50%, -50%);
+}
+
+.cont03 .item.a {
+  transform: translate(-50%, -50%) rotate(12deg);
+  background-color: #ffbbcc;
+}
+
+.cont03 .item.b {
+  transform: translate(-50%, -50%) rotate(-15deg);
+  background-color: #805fbe;
+}
+
+.cont03 .item.c {
+  transform: translate(-50%, -50%) rotate(18deg);
+  background-color: #febbff;
+}
+
+.cont03 .item.d {
+  transform: translate(-50%, -50%) rotate(-3deg);
+  background-color: #7551b1;
+}
+
+.cont03 .item.e {
+  transform: translate(-50%, -50%) rotate(6deg);
+  background-color: #b99264;
+}
+
+@media (max-width: 1240px) {
+  /* layout */
+  .container {
+    padding: 0 1.25rem;
+  }
+}
