@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jaehyun</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/common-ui.js" defer></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard.css"
+      integrity="sha512-NzqTHTrO48HsIamogmIaVhTXoSgRF24Cn+ynrNYrFuKrY0AdDbmcNieiOHsQARS/r0Gax9VwV3/rVMHs3ipUlg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <style>
+      .guide_wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 60px 0 150px 0;
+      }
+      .guide_wrap .head_wrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        color: #fff;
+        height: 60px;
+        font-size: 24px;
+        line-height: 60px;
+        text-align: center;
+        background: #222;
+        z-index: 100;
+      }
+      .guide_wrap .cont_box {
+        margin-top: 50px;
+      }
+      .guide_wrap .cont_inner {
+        padding: 15px 0;
+      }
+      .guide_wrap .h1_guide {
+        font-size: 1rem;
+        color: #2badcd;
+        border-bottom: 1px solid #2badcd;
+        font-weight: 700;
+      }
+      .guide_wrap .subtit {
+        font-size: 1rem;
+        color: #333;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="guide_wrap">
+      <div class="head_wrap">Guide</div>
+
+      <div class="cont_box">
+        <h1 class="h1_guide">▶ Heading</h1>
+        <div class="cont_inner">
+          <h1 class="h1_type">h1_type</h1>
+          <h2 class="h2_type">h2_type</h2>
+          <h3 class="h3_type">h3_type</h3>
+          <h4 class="h4_type">h4_type</h4>
+          <h5 class="h5_type">h5_type</h5>
+        </div>
+      </div>
+
+      <div class="cont_box">
+        <h1 class="h1_guide">▶ Text & Align</h1>
+        <div class="cont_inner">
+          <p>안녕하세요.</p>
+          <p>안녕하세요.</p>
+          <br />
+          <p class="tl">왼쪽 정렬</p>
+          <p class="tc">가운데 정렬</p>
+          <p class="tr">오른쪽 정렬</p>
+        </div>
+      </div>
+
+      <div class="cont_box">
+        <h1 class="h1_guide">▶ Text list</h1>
+        <div class="cont_inner">
+          <ul class="dot_list">
+            <li>안녕하세요.<br />안녕하세요.</li>
+            <li>안녕하세요.</li>
+            <li>안녕하세요.</li>
+            <li>안녕하세요.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cont_box">
+        <h1 class="h1_guide">▶ Terms box</h1>
+        <div class="cont_inner">
+          <div class="terms_box">
+            <p>약관 내용 1</p>
+            <p>약관 내용 2</p>
+            <p>약관 내용 3</p>
+            <p>약관 내용 4</p>
+            <p>약관 내용 5</p>
+            <p>약관 내용 6</p>
+            <p>약관 내용 7</p>
+            <p>약관 내용 8</p>
+            <p>약관 내용 9</p>
+            <p>약관 내용 10</p>
+            <br />
+          </div>
+        </div>
+      </div>
+
+      <div class="cont_box">
+        <h1 class="h1_guide">▶ Button</h1>
+        <div class="cont_inner">
+          <a href="#" class="btn_basic1">btn_basic1</a>
+          <a href="#" class="btn_basic2">btn_basic2</a>
+          <a href="#" class="btn_basic1 big">btn_basic1 big</a>
+          <a href="#" class="btn_basic1 small">btn_basic1 small</a>
+          <a href="#" class="btn_basic1 xsmall">btn_basic1 xsmall</a>
+        </div>
+
+        <div class="cont_inner">
+          <p class="subtit">- Round</p>
+          <a href="#" class="btn_basic1 round">btn_basic1</a>
+          <a href="#" class="btn_basic2 round">btn_basic2</a>
+          <a href="#" class="btn_basic1 big round">btn_basic1 big</a>
+          <a href="#" class="btn_basic1 small round">btn_basic1 small</a>
+          <a href="#" class="btn_basic1 xsmall round">btn_basic1 xsmall</a>
+        </div>
+      </div>
+
+      <div class="cont_box">
+        <h1 class="h1_guide">▶ Form</h1>
+        <div class="cont_inner">
+          <div class="cont_inner">
+            <p>
+              <input
+                type="text"
+                id=""
+                name=""
+                value=""
+                placeholder="내용을 입력하세요."
+              />
+            </p>
+            <br />
+            <p><input type="text" id="" name="" value="disabled" disabled /></p>
+            <br />
+            <p><input type="file" id="" name="" value="" /></p>
+          </div>
+          <br />
+
+          <span class="chkbox">
+            <input type="checkbox" name="" id="chk01" value="" />
+            <label for="chk01">check 01</label>
+          </span>
+          <span class="chkbox">
+            <input type="checkbox" name="" id="chk02" value="" />
+            <label for="chk02">check 02</label>
+          </span>
+          <span class="chkbox">
+            <input type="checkbox" name="" id="chk03" value="" disabled />
+            <label for="chk03">check 03</label>
+          </span>
+        </div>
+
+        <div class="cont_inner">
+          <span class="radiochk">
+            <input type="radio" name="radiogroup" id="radio01" value="" />
+            <label for="radio01">radio 01</label>
+          </span>
+          <span class="radiochk">
+            <input type="radio" name="radiogroup" id="radio02" value="" />
+            <label for="radio02">radio 02</label>
+          </span>
+          <span class="radiochk">
+            <input
+              type="radio"
+              name="radiogroup"
+              id="radio03"
+              value=""
+              disabled
+            />
+            <label for="radio03">radio 03</label>
+          </span>
+          <span class="radiochk">
+            <input
+              type="radio"
+              name="radiogroup"
+              id="radio04"
+              value=""
+              disabled
+              checked
+            />
+            <label for="radio04">radio 04</label>
+          </span>
+        </div>
+
+        <div class="cont_inner">
+          <select class="sel" name="" id="">
+            <option value="">선택</option>
+            <option value="">1</option>
+            <option value="">2</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="cont_box">
+        <h1 class="h1_guide">▶ Table</h1>
+        <div class="cont_inner">
+          <table class="tb_list">
+            <caption>
+              sample table
+            </caption>
+            <colgroup>
+              <col style="width: 33.33%" />
+              <col style="width: 33.33%" />
+              <col style="width: auto" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">th 01</th>
+                <th scope="col">th 02</th>
+                <th scope="col">th 03</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>td 01</td>
+                <td>td 02</td>
+                <td>td 03</td>
+              </tr>
+              <tr>
+                <td><a href="#">link 01</a><br />td 01</td>
+                <td>td 022</td>
+                <td>td 033</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="cont_box">
+        <h1 class="h1_guide">▶ Flex-layout</h1>
+        <div class="cont_inner">
+          <div class="flex_wrap">
+            <div class="flex_item">1</div>
+            <div class="flex_item">2222 222<br />22 22 222</div>
+          </div>
+        </div>
+
+        <div class="cont_inner">
+          <div class="flex_wrap">
+            <div class="flex_item">1</div>
+            <div class="flex_item">2<br />2</div>
+            <div class="flex_item">3<br />3</div>
+          </div>
+        </div>
+
+      <div class="cont_box">
+        <h1 class="h1_guide">▶ Tab</h1>
+        <div class="cont_inner">
+          <div class="tab_type01">
+            <ul>
+              <li>
+                <a href="#paymentS01" class="active">tab01</a>
+              </li>
+              <li>
+                <a href="#paymentS02" class="">tab02</a>
+              </li>
+              <li>
+                <a href="#paymentS03" class="">tab03</a>
+              </li>
+              <li>
+                <a href="#paymentS04" class="">tab04</a>
+              </li>
+              <li>
+                <a href="#paymentS05" class="">tab05</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab_view_box block" id="paymentS01">(내용 1)</div>
+
+          <div class="tab_view_box" id="paymentS02">(내용 2)</div>
+
+          <div class="tab_view_box" id="paymentS03">(내용 3)</div>
+
+          <div class="tab_view_box" id="paymentS04">(내용 4)</div>
+
+          <div class="tab_view_box" id="paymentS05">(내용 5)</div>
+        </div>
+      </div>
+
+      <div class="cont_box">
+        <h1 class="h1_guide">▶ Modal</h1>
+        <div class="cont_inner">
+          <a href="#ex1" rel="modal:open">Open Modal</a>
+        </div>
+      </div>
+
+      <!-- Modal HTML -->
+      <div id="ex1" class="modal">
+        <p>Thanks for clicking. That felt good.</p>
+        <a href="#" rel="modal:close">Close</a>
+      </div>
+    </div>
+  </body>
+</html>
