@@ -8,6 +8,8 @@ const header = document.querySelector('.header');
 const gnbMenu = document.querySelector('.header_nav');
 
 gnbMenu.addEventListener('click', (e) => {
+  e.preventDefault();
+
   let data = e.target.getAttribute('data-link');
   let target = document.querySelector('#' + data).offsetTop;
 
