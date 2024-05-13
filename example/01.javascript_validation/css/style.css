@@ -127,7 +127,7 @@ a:hover {
   left: 0;
   top: 50%;
   width: 100%;
-  font-size: 3.75rem;
+  font-size: 60px;
   font-weight: 700;
   color: #fff;
   text-align: center;
@@ -252,5 +252,36 @@ a:hover {
   /* layout */
   .container {
     padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* header */
+  .header .header_nav ul li a {
+    font-size: 0.9375rem;
+    padding: 0 0.875rem;
+  }
+
+  /* main */
+  .main_visual .inner_txt {
+    font-size: 40px;
+  }
+
+  .main_intro .inner_wrap {
+    display: block;
+  }
+
+  .main_site .site_wrap ul > li {
+    width: 100%;
+  }
+
+  .main_contact .main_form dt {
+    width: 100%;
+    padding: 0;
+  }
+
+  .main_contact .main_form dd {
+    width: 100%;
+    padding: 2px 0 12px 0;
   }
 }
